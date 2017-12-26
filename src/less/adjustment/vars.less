@@ -1,0 +1,35 @@
+/* Mixins
+============================================*/
+.clearfix() {
+
+	&:after,
+	&:before {
+		display: table;
+		content: "";
+		clear: both;
+	}		
+}
+
+.table() {
+	display: table;
+	width: 100%;
+}
+
+.table-cell() {
+	display: table-cell;
+	vertical-align: middle;
+	
+} 
+
+/* Vars
+============================================ */
+//offset
+@p-off : 50px;
+
+//colors
+@base-bg: #eeeeee;        
+
+//fonts
+@font-bold : 'robotobold';
+@font-medium : 'robotomedium';
+@font : 'roboto';
