@@ -19,47 +19,92 @@
   </head>
   <body class="page">
     <div class="page-wrapper">
-      <!--BEGIN: PAGE CONTENT -->
-      <div class="page-content">
-        <!--BEGIN: HEADER -->
-        <header class="page-header">
-          <div class="container">
-            <a class="logo page-header__logo ">
-              <img src="img/logo/nerds-logo.png" alt="Логотип" width="160" height="65" class="logo__img">
-            </a>
-            <nav class="page-header__nav main-nav">
-              <ul class="nav">
-                <li class="nav__item">
-                  <a class="nav__link" href="#" >Студия</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="#">Клиенты</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="#">Магазин</a>
-                </li>
-                <li class="nav__item">
-                  <a  class="nav__link" href="#">Контакты</a>
-                </li>
-              </ul>
-            </nav>
-            <nav class="main-user page-header__user">
-              <a class="user-cart" href="#" >
-                <span class="user-cart__icon"></span>Корзина
+      <div class="page-content"><!--BEGIN: PAGE CONTENT -->
+      <header class="page-header"><!--BEGIN: HEADER -->
+      <div class="container">
+        <a class="logo page-header__logo ">
+          <img src="img/logo/nerds-logo.png" alt="Логотип" width="160" height="65" class="logo__img">
+        </a>
+        <nav class="main-nav page-header__nav">
+          <ul class="nav">
+            <li class="nav__item">
+              <a class="nav__link" href="#" >Студия</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Клиенты</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Магазин</a>
+            </li>
+            <li class="nav__item">
+              <a  class="nav__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="main-nav page-header__user">
+          <ul class="nav">
+            <li class="nav__item">
+              <a class="nav__link nav__link--iconed"  href="#">
+                <span class="nav__icon flaticon-shopping-cart-black-shape"></span>
+                Корзина
               </a>
-            </nav>
-          </div>
-        </header>
-        <!--END: HEADER -->
+            </li>
+          </ul>
+        </nav>
       </div>
-      <!--END: PAGE CONTENT  -->
-      <!-- BEGIN: FOOTER -->
-      <footer class="page-footer">
+      </header><!--END: HEADER -->
+      <section class="page-slider"><!-- BEGIN: PAGE-SLIDER -->
         <div class="container">
-          <p>Это подвал его пока не трогаем))</p>
+          <ul class="slides">
+            <li class="slides__item slides__item--first">
+              <div class="slides__text">
+                <div class="text-title slides__title">
+                  Долго, дорого, <br> скрупулезно.
+                </div>
+                <p class="text-description slides__description">
+                  Математически выверенный дизайн <br> для вашего сайта или мобильного приложения
+                </p>
+                <a  class="page-button page-button--primary slides__button" href="#">
+                  УЗНАТЬ БОЛЬШЕ
+                </a>
+              </div>
+            </li>
+            <li class="slides__item slides__item--second">
+              <div class="slides__text">
+                <div class="text-title slides__title">
+                  Любим математику <br> как никто другой
+                </div>
+                <p class="text-description slides__description">
+                  Никакого креатива, только математические формулы <br>  для расчета идеальных пропорций
+                </p>
+                <a  class="page-button page-button--primary slides__button" href="#">
+                  УЗНАТЬ БОЛЬШЕ
+                </a>
+              </div>
+            </li>
+            <li class="slides__item slides__item--third">
+              <div class="slides__text">
+                <div class="text-title slides__title">
+                  Только ночь,<br> только хардкор
+                </div>
+                <p class="text-description slides__description">
+                  Работать днем, как все? Мы против этого. <br>
+                  Ближе к полуночи работ
+                </p>
+                <a  class="page-button page-button--primary slides__button" href="#">
+                  УЗНАТЬ БОЛЬШЕ
+                </a>
+              </div>
+            </li>
+          </ul>
         </div>
-      </footer>
-      <!-- END: FOOTER -->
+      </section><!-- END: PAGE-SLIDER -->
+      </div><!--END: PAGE CONTENT  -->
+      <footer class="page-footer"><!-- BEGIN: FOOTER -->
+      <div class="container">
+        <p>Это подвал его пока не трогаем))</p>
+      </div>
+      </footer><!-- END: FOOTER -->
     </div>
   </body>
 </html>
