@@ -1,5 +1,8 @@
 /* Base settings and styles
 =========================================== */
+*{
+  box-sizing: border-box;
+}
 
 html,
 body {
@@ -17,11 +20,12 @@ body {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	
-} 
+
+}
 
 a {
 	font-size: 16px;
+  line-height: 1.85;
 	color: #000;
 	font-weight: 500;
 	text-decoration: none;
@@ -48,7 +52,8 @@ footer {
 }
 
 .container {
-	width: 1160px;
+	max-width: 1200px;
 	padding: 0 20px;
 	margin: 0 auto;
+  .clearfix();
 }

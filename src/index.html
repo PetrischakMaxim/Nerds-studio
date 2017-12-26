@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Студия Nerds</title>
     <!-- Pixel Glass -->
     <style>
@@ -11,10 +12,10 @@
     background-image: url('pixel-glass/nerds-index.jpg');
     }
     </style>
-    <link href="pixel-glass/styles.css">
+    <link  type="text/css" href="pixel-glass/styles.css">
     <script src="pixel-glass/script.js"></script>
     <!-- // Pixel Glass -->
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
   </head>
   <body class="page">
     <div class="page-wrapper">
@@ -23,47 +24,42 @@
         <!--BEGIN: HEADER -->
         <header class="page-header">
           <div class="container">
-            <div class="page-header__logo">
-              <a href="#" class="logo">
-                <img src="img/logo/nerds-logo.png" alt="" class="logo__img"> <!-- Элемент -->
+            <a class="logo page-header__logo ">
+              <img src="img/logo/nerds-logo.png" alt="Логотип" width="160" height="65" class="logo__img">
+            </a>
+            <nav class="page-header__nav main-nav">
+              <ul class="nav">
+                <li class="nav__item">
+                  <a class="nav__link" href="#" >Студия</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#">Клиенты</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#">Магазин</a>
+                </li>
+                <li class="nav__item">
+                  <a  class="nav__link" href="#">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <nav class="main-user page-header__user">
+              <a class="user-cart" href="#" >
+                <span class="user-cart__icon"></span>Корзина
               </a>
-            </div>
-            <nav class="page-header__nav">
-              <ul class="nav"> <!-- Блок -->
-              <li class="nav__item"> <!-- Элемент -->
-              <a href="#" class="nav__link">Студия</a> <!-- Элемент -->
-            </li>
-            <li class="nav__item"> <!-- Элемент -->
-            <a href="#" class="nav__link">Клиенты</a> <!-- Элемент -->
-          </li>
-          <li class="nav__item"> <!-- Элемент -->
-          <a href="#" class="nav__link">Магазин</a> <!-- Элемент -->
-        </li>
-        <li class="nav__item"> <!-- Элемент -->
-        <a href="#" class="nav__link">Контакты</a> <!-- Элемент -->
-      </li>
-    </ul>
-  </nav>
-  <div class="page-header__cart">
-    <div class="cart">
-      <a href="#" class="cart__icon "></a>
-      <a href="#" class="cart__title">
-        Корзина
-      </a>
+            </nav>
+          </div>
+        </header>
+        <!--END: HEADER -->
+      </div>
+      <!--END: PAGE CONTENT  -->
+      <!-- BEGIN: FOOTER -->
+      <footer class="page-footer">
+        <div class="container">
+          <p>Это подвал его пока не трогаем))</p>
+        </div>
+      </footer>
+      <!-- END: FOOTER -->
     </div>
-  </div>
-</div>
-</header>
-<!--END: HEADER -->
-</div>
-<!--END: PAGE CONTENT  -->
-<!-- BEGIN: FOOTER -->
-<footer class="page-footer">
-<div class="container">
-<p>Это подвал его пока не трогаем))</p>
-</div>
-</footer>
-<!-- END: FOOTER -->
-</div>
-</body>
+  </body>
 </html>
