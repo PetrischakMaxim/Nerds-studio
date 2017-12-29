@@ -1,0 +1,31 @@
+.product {
+
+}
+
+.product__title {
+  margin-bottom: @p-off/2;
+}
+
+.product__item {
+  position: relative;
+  margin-left: 35px;
+  margin-bottom: @p-off/2;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:before {
+    content:"";
+    position: absolute;
+    left: -35px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+
+    height: 2px;
+    width: 25px;
+    background: @danger-color;
+
+  }
+}
