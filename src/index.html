@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Студия Nerds</title>
     <!-- Pixel Glass -->
-    <style>
-      html {
-      background-repeat: no-repeat;
-      background-position: 50% 0;
-      background-image: url('pixel-glass/nerds-index.jpg');
-      }
-    </style>
+      <style>
+        html {
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        background-image: url('pixel-glass/nerds-index.jpg');
+        }
+      </style>
      <!-- <link  type="text/css" href="pixel-glass/styles.css">
          <script src="pixel-glass/script.js"></script> -->
     <!-- // Pixel Glass -->
@@ -185,7 +185,7 @@
               </ul>
             </div>
           </section><!-- END: STUDIO -->
-          <div class="partners section-border">
+          <div class="partners section-border"><!-- BEGIN: PARTNERS -->
             <ul class="partners-list partners__list">
               <li class="partners-list__item partners__member">
                 <a class="partners-list__link" href="#"><img class="partners-list__logo" src="img/partners/html.png" alt="htmlacademy" width="199" height="68"></a>
@@ -200,9 +200,29 @@
                 <a class="partners-list__link" href="#"><img class="partners-list__logo" src="img/partners/mishka.png" alt="htmlacademy" width="173" height="84"></a>
               </li>
             </ul>
-          </div>
+          </div><!-- END: PARTNERS -->
         </div>
       </main><!--END: MAIN -->
+      <div class="page-map" id="page-map"><!-- BEGIN: PAGE-MAP -->
+        <div class="container">
+          <div class="address">
+            <p class="text-description" text-description--upper address__title>
+              NЁRDS DESIGN STUDIO
+            </p>
+            <p class="text-description text-description--lighten">
+              191186, Санкт-Петербург,<br>
+              ул. Б. Конюшенная, д. 19/8
+            </p>
+            <p class="text-description text-description--lighten">
+              тел. +7 (812) 275-75-75
+            </p>
+            <a  class="page-button page-button--primary address__btn" href="#page-popup">
+              Напишите нам
+            </a>
+          </div>
+        </div>
+        </div><!-- END: PAGE-MAP -->
+
       </div><!--END: PAGE CONTENT  -->
       <footer class="page-footer"><!-- BEGIN: FOOTER -->
       <div class="container">
@@ -212,7 +232,10 @@
     </div>
     <!-- JavaScript
     ============================================ -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFf4N33JfOe99FnY25vM1M-CkNGejWMsw&callback=initMap"
+        async defer></script>
     <script src="js/libs.min.js"></script>
+
     <script src="js/main.js"></script>
   </body>
 </html>
