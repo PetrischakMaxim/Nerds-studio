@@ -1,0 +1,35 @@
+.social {
+  display: table;
+}
+
+.social__icon {
+  display: table-cell;
+  vertical-align: middle;
+  padding-right: 10px;
+}
+
+.social__link {
+  display: table-cell;
+  vertical-align: middle;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  text-align: center;
+  background: @social-bg;
+  color: @light-color;
+  transition: all 0.25s;
+
+  &:hover {
+    background: @danger-color;
+    transform: translateY(-3px);
+  }
+
+  &:active {
+    background: @danger-active;
+  }
+}
+
+.page-footer__promo-title {
+  margin: 0;
+  padding: 0;
+}

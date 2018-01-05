@@ -4,31 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Студия Nerds</title>
+
     <!-- Pixel Glass -->
-    <style>
-      html {
-      background-repeat: no-repeat;
-      background-position: 50% 0;
-      background-image: url('pixel-glass/nerds-index.jpg');
-      }
+    <!--   <style>
+     html {
+     background-repeat: no-repeat;
+     background-position: 50% 0;
+     background-image: url('pixel-glass/nerds-index.jpg');
+     }
     </style>
-     <!-- <link  type="text/css" href="pixel-glass/styles.css">
-         <script src="pixel-glass/script.js"></script> -->
+    <link  type="text/css" href="pixel-glass/styles.css">
+    <script src="pixel-glass/script.js"></script> -->
     <!-- // Pixel Glass -->
+
     <link rel="stylesheet" type="text/css" href="css/style.min.css">
+
   </head>
   <body class="page">
-    <div class="page-wrapper">
-      <div class="page-content"><!--BEGIN: PAGE CONTENT -->
-      <header class="page-header"><!--BEGIN: HEADER -->
+    <div class="page-wrapper"><!-- BEGIN: PAGE-WRAPPER -->
+      <div class="page-content"><!--BEGIN: PAGE-CONTENT -->
+      <header class="page-header"><!--BEGIN: PAGE-HEADER -->
       <div class="container">
-        <a class="logo page-header__logo ">
+        <a class="logo page-header__logo wow wow fadeInDown">
           <img src="img/logo/nerds-logo.png" alt="Логотип" width="160" height="65" class="logo__img">
         </a>
-        <nav class="main-nav page-header__nav">
+        <nav class="main-nav page-header__nav wow wow fadeInDown">
           <ul class="nav">
             <li class="nav__item">
-              <a class="nav__link" href="#" >Студия</a>
+              <a class="nav__link nav__link--active" href="#" >Студия</a>
             </li>
             <li class="nav__item">
               <a class="nav__link" href="#">Клиенты</a>
@@ -41,7 +44,7 @@
             </li>
           </ul>
         </nav>
-        <nav class="main-nav page-header__user">
+        <nav class="main-nav page-header__user wow fadeInDown">
           <ul class="nav">
             <li class="nav__item">
               <a class="nav__link nav__link--iconed"  href="#">
@@ -52,8 +55,9 @@
           </ul>
         </nav>
       </div>
-      </header><!--END: HEADER -->
-      <section class="page-slider"><!-- BEGIN: PAGE-SLIDER -->
+      </header><!--END:PAGE-HEADER -->
+
+      <div class="page-slider"><!-- BEGIN: PAGE-SLIDER -->
         <div class="container">
           <ul class="slides" id="js-slides">
             <li class="slides__item slides__item--first">
@@ -98,15 +102,16 @@
             </li>
           </ul>
         </div>
-      </section><!-- END: PAGE-SLIDER -->
+      </div><!-- END: PAGE-SLIDER -->
+
       <main class="page-main"><!-- BEGIN: MAIN -->
         <div class="container">
           <section class="advantages section-border"><!-- BEGIN: ADVANTAGES -->
             <h1 class="page-hidden">
               Наши преимущества
             </h1>
-            <ul class="advantages-list advantages__items">
-              <li class="advantages-list__item advantages__item">
+            <ul class="advantages-list advantages__items wow fadeInDown">
+              <li class="advantages-list__item advantages__item ">
                 <img src="img/advantages/illustration-1.jpg" alt="" class="advantages-list__img" width="300" height="146">
                 <h3 class="advantages-list__title">
                   Веб-сайты
@@ -130,8 +135,8 @@
                   Заказать
                 </a>
               </li>
-              <li class="advantages-list__item advantages__item">
-                <img src="img/advantages/illustration-3.jpg" alt="" class="advantages-list__img" width="300" height="146">
+              <li class="advantages-list__item advantages__item ">
+                <img src="img/advantages/illustration-3.jpg" alt="" class="advantages-list__img " width="300" height="146">
                 <h3 class="advantages-list__title">
                   Презентации
                 </h3>
@@ -144,8 +149,9 @@
               </li>
             </ul>
           </section><!-- END: ADVANTAGES -->
+
           <section class="studio section-border "><!-- BEGIN: STUDIO -->
-            <div class="studio-description studio__content">
+            <div class="studio-description studio__content wow fadeInLeft">
               <h2 class="text-title text-title--h2 studio__title">
                 Мы — маленькая, но гордая <br> дизайн-студия из Краснодара.
               </h2>
@@ -167,7 +173,7 @@
                 </li>
               </ul>
             </div>
-            <div class="statistics studio__statistics">
+            <div class="statistics studio__statistics wow fadeInRight">
               <img class="secondary-logo statistics__logo" src="img/studio/nerds-illustration.jpg" alt="Логотип" width="360" height="208">
               <ul class="statistics-list statistics__table">
                 <li class="text-description text-description--upper statistics-list__title">
@@ -185,8 +191,9 @@
               </ul>
             </div>
           </section><!-- END: STUDIO -->
-          <div class="partners section-border">
-            <ul class="partners-list partners__list">
+
+          <div class="partners section-border"><!-- BEGIN: PARTNERS -->
+            <ul class="partners-list partners__list wow fadeInDown">
               <li class="partners-list__item partners__member">
                 <a class="partners-list__link" href="#"><img class="partners-list__logo" src="img/partners/html.png" alt="htmlacademy" width="199" height="68"></a>
               </li>
@@ -200,18 +207,90 @@
                 <a class="partners-list__link" href="#"><img class="partners-list__logo" src="img/partners/mishka.png" alt="htmlacademy" width="173" height="84"></a>
               </li>
             </ul>
-          </div>
+          </div><!-- END: PARTNERS -->
         </div>
       </main><!--END: MAIN -->
-      </div><!--END: PAGE CONTENT  -->
-      <footer class="page-footer"><!-- BEGIN: FOOTER -->
-      <div class="container">
-        <p>Это подвал его пока не трогаем))</p>
+        <div class="page-map"><!-- BEGIN: PAGE-MAP -->
+          <div id="page-map"></div>
+          <div class="container address-wrapper">
+              <div class="address wow fadeInLeft">
+                <p class="text-description text-description--upper address__title">
+                  NЁRDS DESIGN STUDIO
+                </p>
+                <p class="text-description text-description--lighten">
+                  191186, Санкт-Петербург,<br>
+                  ул. Б. Конюшенная, д. 19/8
+                </p>
+                <p class="text-description text-description--lighten">
+                  тел. +7 (812) 275-75-75
+                </p>
+                <a  class="page-button page-button--primary address__btn js-popup-btn" href="#page-popup">
+                  Напишите нам
+                </a>
+              </div>
+          </div>
+        </div><!-- END: PAGE-MAP -->
+      </div><!--END: PAGE-CONTENT  -->
+
+      <footer class="page-footer"><!-- BEGIN:PAGE-FOOTER  -->
+        <div class="container clearfix">
+          <div class="page-footer__social">
+            <ul class="social wow fadeInLeft">
+              <li class="social__icon">
+                <a href="#" class="social__link flaticon-vk-social-vk"></a>
+              </li>
+              <li class="social__icon">
+                <a href="#" class="social__link flaticon-facebook-logo"></a>
+              </li>
+              <li class="social__icon">
+                <a href="#" class=" social__link flaticon-instagram-logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__promo wow fadeInRight">
+            <h3 class="text-title text-title--h3 page-footer__promo-title">
+              Давайте дружить, это выгодно!
+            </h3>
+            <p class="text-description page-footer__promo-text">
+              Скидка 10% для друзей из социальных сетей.
+            </p>
+          </div>
+        </div>
+      </footer><!-- END:PAGE-FOOTER -->
+    </div><!-- END: PAGE-WRAPPER -->
+
+    <!--BEGIN: PAGE-POPUP -->
+    <div class="page-popup js-popup" id="page-popup">
+      <h2 class="text-title text-title--h2">
+        Напишите нам
+      </h2>
+      <div class="form-wrapper">
+        <form class="page-form" action="#">
+            <label for="input-name" class="text-description  page-form__label page-form__label--input">
+              Ваше имя:
+              <input type="text" class="page-form-style page-form__input " id="input-name"  placeholder="Представьтесь, пожалуйста" required>
+            </label>
+            <label for="input-email" class="text-description page-form__label page-form__label--input">
+              Ваш e-mail:
+              <input type="email" class="page-form-style page-form__input" id="input-email" placeholder="Для отправки ответа" required>
+            </label>
+          <label for="textarea" class="text-description page-form__label page-form__label--block">
+            Текст письма:
+            <textarea class="page-form-style page-form__textarea" id="textarea" cols="30" rows="10" placeholder="В свободной форме" required></textarea>
+          </label>
+          <button type="submit" class="page-button page-button--primary page-form__button" value="">Отправить</button>
+        </form>
       </div>
-      </footer><!-- END: FOOTER -->
+      <a href="#" class="page-form__toggle js-popup-close">
+        &#10006;
+      </a>
     </div>
-    <!-- JavaScript
+    <!--END: PAGE-POPUP -->
+
+    <!-- JavaScript and libs
     ============================================ -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFf4N33JfOe99FnY25vM1M-CkNGejWMsw&callback=initMap"
+        async defer></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
   </body>
