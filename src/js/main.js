@@ -86,7 +86,7 @@ function initMap() {
           map: map,
           position: myLatLng,
           title: 'NЁRDS DESIGN STUDIO',
-          icon : '../img/page-map/map-marker.png'
+          icon : 'page-map/map-marker.png'
   });
       marker.addListener('click', function() {
           infowindow.open(map, marker);

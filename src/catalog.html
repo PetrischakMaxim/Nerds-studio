@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Магазин готовых шаблонов</title>
+
+    <!-- Pixel Glass -->
+    <!-- <style>
+     html {
+     background-repeat: no-repeat;
+     background-position: 50% 0;
+     background-image: url('pixel-glass/nerds-catalog.jpg');
+     }
+    </style>
+    <link  type="text/css" href="pixel-glass/styles.css">
+    <script src="pixel-glass/script.js"></script>
+    <!-- // Pixel Glass -->
+
+    <!-- Favicon -->
+      <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+      <link rel="manifest" href="img/favicon/manifest.json">
+      <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+      <meta name="theme-color" content="#ffffff">
+    <!-- // Favicon -->
+
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+
+  </head>
+  <body class="page">
+
+    <div class="page-wrapper"><!-- BEGIN: PAGE-WRAPPER -->
+      <div class="page-content"><!--BEGIN: PAGE-CONTENT -->
+      <header class="page-header page-header--inner"><!--BEGIN: PAGE-HEADER -->
+        <div class="container">
+          <a class="logo page-header__logo wow wow fadeInDown" href="index.html">
+            <img src="img/logo/nerds-logo.png" alt="Логотип" width="160" height="65" class="logo__img">
+          </a>
+          <nav class="main-nav page-header__nav wow wow fadeInDown">
+            <ul class="nav">
+              <li class="nav__item">
+                <a class="nav__link " href="index.html" >Студия</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Клиенты</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link nav__link--active" href="#">Магазин</a>
+              </li>
+              <li class="nav__item">
+                <a  class="nav__link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <nav class="main-nav page-header__user wow fadeInDown">
+            <ul class="nav">
+              <li class="nav__item">
+                <a class="nav__link nav__link--iconed"  href="#">
+                  <span class="nav__icon flaticon-shopping-cart-black-shape"></span>
+                  Корзина
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="page-header___title">
+            <h1 class="text-title text-title--h1 wow fadeInLeft">
+              Магазин готовых шаблонов
+            </h1>
+          </div>
+        </div>
+      </header><!--END:PAGE-HEADER -->
+
+      <main class="page-shop"><!-- BEGIN: PAGE-SHOP -->
+        <div class="container">
+          <div class="page-shop__wrapper">
+            <aside class="page-shop__form">
+              <form action="#" class="form-filters">
+                <div class="form-filters__block">
+                  <p class="text-description text-description--upper form-filters__title">
+                    СТОИМОСТЬ:
+                  </p>
+                  <div class="range-filter">
+                    <div class="range-filter__controls">
+                      <div class="range-filter__scale">
+                        <div class="range-filter__bar" style="width: 70%;">
+                        </div>
+                      </div>
+                      <div class="toggle toogle--min"></div>
+                      <div class="toggle toogle--max"></div>
+                    </div>
+                    <div class="range-filter__price">
+                      <label for="min-price" class="page-filter__label">
+                        от <input class="range-filter__input range-filter__input--min" type="text" name="min-price" id="" value="0">
+                      </label>
+                      <label for="max-price" class="page-filter__label">
+                        до <input type="text" name="max-price" class="range-filter__input range-filter__input--max" id="" value="15 000">
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-filters__block">
+                  <p class="text-description text-description--upper form-filters__title">
+                    Сетка:
+                  </p>
+                  <div class="form-filters__block-toggle">
+                    <label class="form-filters__label">
+                      <input class="form-filters__radio" type="radio" name="radio" checked>
+                      <span class="form-filters__custom form-filters__custom--radio"></span>
+                      <span class="form-filters__option">Адаптивная</span>
+                    </label>
+                    <label class="form-filters__label">
+                      <input class="form-filters__radio" type="radio" name="radio">
+                      <span class="form-filters__custom form-filters__custom--radio"></span>
+                      <span class="form-filters__option">Фиксированная</span>
+                    </label>
+                    <label class="form-filters__label">
+                      <input class="form-filters__radio" type="radio" name="radio">
+                      <span class="form-filters__custom form-filters__custom--radio"></span>
+                      <span class="form-filters__option">Резиновая</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="form-filters__block">
+                  <p class="text-description text-description--upper form-filters__title">
+                    ОСОБЕННОСТИ:
+                  </p>
+                  <div class="form-filters__block-toggle">
+                    <label class="form-filters__label">
+                      <input class="form-filters__checkbox" type="checkbox" name="checkbox-1">
+                      <span class="form-filters__custom form-filters__custom--checkbox"></span>
+                      <span class="form-filters__option">Слайдер</span>
+                    </label>
+                    <label class="form-filters__label">
+                      <input class="form-filters__checkbox" type="checkbox" name="checkbox-2">
+                      <span class="form-filters__custom form-filters__custom--checkbox"></span>
+                      <span class="form-filters__option">Блок преимуществ</span>
+                    </label>
+                    <label class="form-filters__label">
+                      <input class="form-filters__checkbox" type="checkbox" name="checkbox-3">
+                      <span class="form-filters__custom form-filters__custom--checkbox"></span>
+                      <span class="form-filters__option">Новости</span>
+                    </label>
+                    <label class="form-filters__label">
+                      <input class="form-filters__checkbox" type="checkbox" name="checkbox-4">
+                      <span class="form-filters__custom form-filters__custom--checkbox"></span>
+                      <span class="form-filters__option">Галерея</span>
+                    </label>
+                    <label class="form-filters__label">
+                      <input class="form-filters__checkbox" type="checkbox" name="checkbox-5">
+                      <span class="form-filters__custom form-filters__custom--checkbox"></span>
+                      <span class="form-filters__option">Корзина</span>
+                    </label>
+                  </div>
+                </div>
+              </form>
+            </aside>
+            <section class="page-shop__items">
+              <h1 class="page-hidden">Наши товары</h1>
+              <ul class="shop-list">
+                <li class="shop-list__item">
+                  <a href="#" class="shop-list__link"></a>
+                </li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </main><!--END: PAGE-SHOP -->
+
+        <div class="page-map"><!-- BEGIN: PAGE-MAP -->
+          <div id="page-map"></div>
+          <div class="container address-wrapper">
+              <div class="address wow fadeInLeft">
+                <p class="text-description text-description--upper address__title">
+                  NЁRDS DESIGN STUDIO
+                </p>
+                <p class="text-description text-description--lighten">
+                  191186, Санкт-Петербург,<br>
+                  ул. Б. Конюшенная, д. 19/8
+                </p>
+                <p class="text-description text-description--lighten">
+                  тел. +7 (812) 275-75-75
+                </p>
+                <a  class="page-button page-button--primary address__btn js-popup-btn" href="#page-popup">
+                  Напишите нам
+                </a>
+              </div>
+          </div>
+        </div><!-- END: PAGE-MAP -->
+      </div><!--END: PAGE-CONTENT  -->
+
+      <footer class="page-footer"><!-- BEGIN:PAGE-FOOTER  -->
+        <div class="container clearfix">
+          <div class="page-footer__social">
+            <ul class="social wow fadeInLeft">
+              <li class="social__icon">
+                <a href="#" class="social__link flaticon-vk-social-vk"></a>
+              </li>
+              <li class="social__icon">
+                <a href="#" class="social__link flaticon-facebook-logo"></a>
+              </li>
+              <li class="social__icon">
+                <a href="#" class=" social__link flaticon-instagram-logo"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__promo wow fadeInRight">
+            <h3 class="text-title text-title--h3 page-footer__promo-title">
+              Давайте дружить, это выгодно!
+            </h3>
+            <p class="text-description page-footer__promo-text">
+              Скидка 10% для друзей из социальных сетей.
+            </p>
+          </div>
+        </div>
+      </footer><!-- END:PAGE-FOOTER -->
+    </div><!-- END: PAGE-WRAPPER -->
+
+    <!--BEGIN: PAGE-POPUP -->
+    <div class="page-popup js-popup" id="page-popup">
+      <h2 class="text-title text-title--h2">
+        Напишите нам
+      </h2>
+      <div class="form-wrapper">
+        <form class="page-form" action="#">
+            <label for="input-name" class="text-description  page-form__label page-form__label--input">
+              Ваше имя:
+              <input type="text" class="page-form-style page-form__input " id="input-name"  placeholder="Представьтесь, пожалуйста" required>
+            </label>
+            <label for="input-email" class="text-description page-form__label page-form__label--input">
+              Ваш e-mail:
+              <input type="email" class="page-form-style page-form__input" id="input-email" placeholder="Для отправки ответа" required>
+            </label>
+          <label for="textarea" class="text-description page-form__label page-form__label--block">
+            Текст письма:
+            <textarea class="page-form-style page-form__textarea" id="textarea" cols="30" rows="10" placeholder="В свободной форме" required></textarea>
+          </label>
+          <button type="submit" class="page-button page-button--primary page-form__button" value="">Отправить</button>
+        </form>
+      </div>
+      <a href="#" class="page-form__toggle js-popup-close">
+        &#10006;
+      </a>
+    </div>
+    <!--END: PAGE-POPUP -->
+
+    <!-- JavaScript and libs
+    ============================================ -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFf4N33JfOe99FnY25vM1M-CkNGejWMsw&callback=initMap"
+        async defer></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+</html>
