@@ -1,0 +1,84 @@
+.range-filter {
+  width: 100%;
+}
+
+.range-filter__controls {
+  position: relative;
+  height: 80px;
+  padding: 30px 20px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background: @base-bg;
+  overflow: hidden;
+
+}
+
+.range-filter__scale {
+  position: relative;
+  top:50%;
+  transform: translateY(-50%);
+  height: 2px;
+  background: @smoke-color;
+  width: 100%;
+}
+
+.range-filter__bar {
+  height: 2px;
+  background: @secondary-color;
+}
+
+.toggle {
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  border: 10px solid @light-color;
+  cursor: pointer;
+  box-shadow: 0 2px 1px 0 #cccdcd;
+
+  &:after {
+    content:"";
+    position: absolute;
+    transform: translate(-50%,-50%);
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-radius:50%;
+    background-color: #ababab;
+  }
+}
+
+.toogle--min {
+  left: 60%;
+}
+.range-filter__price{
+  position: relative;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  white-space: nowrap;
+  text-align: justify;
+}
+
+.page-filter__label {
+  margin-right: 25px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.range-filter__input  {
+  width: 80px;
+  padding: 12px;
+  border-radius: 5px;
+  margin-left: 10px;
+  border:none;
+  background: @base-bg;
+  overflow: hidden;
+  font-family: 'Roboto';
+  text-align: center;
+  text-transform: none;
+}
+
+
