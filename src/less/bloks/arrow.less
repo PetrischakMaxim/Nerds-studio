@@ -1,0 +1,39 @@
+.arrow {
+  font-size: 0;
+  transition: all 0.3s;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    border: 12px solid @nav-link-color;
+    border-right-width: 6px;
+    border-left-width: 6px;
+    border-right-color: transparent;
+    border-left-color: transparent;
+
+  }
+
+  &:hover {
+    &::before {
+      border-color: darken(@nav-link-color,30%);
+      border-right-color: transparent;
+      border-left-color: transparent;
+    }
+  }
+
+  &:active {
+    &::before {
+      border-color: darken(@nav-link-color,50%);
+      border-right-color: transparent;
+      border-left-color: transparent;
+    }
+  }
+}
+
+.arrow--down::before {
+  border-bottom-width: 0;
+}
+
+.arrow--up::before {
+  border-top-width: 0;
+}
