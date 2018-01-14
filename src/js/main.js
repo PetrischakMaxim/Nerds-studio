@@ -55,10 +55,6 @@ jQuery(document).ready(function($) {
 });
 
 
-/*JavaScript SETTINGS
-===========================================*/
-
-
 /*GOOGLE MAPS https://developers.google.com/maps/documentation/javascript/?hl=ru
 =================================================================================*/
 function initMap() {
@@ -74,9 +70,6 @@ function initMap() {
 
       var contentString = '<p class="text-description">NЁRDS DESIGN STUDIO</p>'
       + '<p class="text-description">191186, Санкт-Петербург, <br>  ул. Б. Конюшенная, д. 19/8 </p>'
-
-
-
 
       var infowindow = new google.maps.InfoWindow({
           content: contentString
@@ -95,5 +88,5 @@ function initMap() {
 
 /*WOW.js https://github.com/matthieua/WOW
 ============================================================*/
-new WOW().init();
+var pageMap = new WOW().init();
 
