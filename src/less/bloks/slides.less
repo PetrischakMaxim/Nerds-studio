@@ -1,8 +1,8 @@
 .slides {
 
   &__item {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top:  @base-offset;
+    padding-bottom:  @base-offset;
     background-repeat: no-repeat;
     background-position: 93% 92%;
 
@@ -31,4 +31,52 @@
 
 .slides__button {
   padding: 18px 54px 18px 54px;
+}
+
+@media (max-width: @lg-width) and (min-width:@md-width ) {
+
+}
+
+@media (max-width: @md-width) and (min-width:@sm-width ) {
+  .slides__item {
+    padding-top:  @base-offset - 10;
+    padding-bottom:  @base-offset - 10;
+    background-size: 80%;
+  }
+}
+
+@media (max-width: @sm-width){
+  .slides__title {
+    margin-bottom: @p-off/3;
+  }
+
+  .slides__description {
+    margin-bottom: @p-off/3;
+  }
+
+  .slides__item {
+    background-size: 70%;
+    background-position: top right;
+    padding-top: @base-offset - 20;
+    padding-bottom: @base-offset - 20;
+
+  }
+
+  .slides__button {
+    padding: 10px 40px;
+  }
+}
+
+
+@media (max-width: @xs-width) {
+  .slides__title,
+  .slides__description {
+    text-align: center;
+
+  }
+    .slides__item {
+      background-image: none;
+      padding-top: @base-offset - 25;
+      padding-bottom: @base-offset - 25;
+   }
 }
