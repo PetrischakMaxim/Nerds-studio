@@ -51,6 +51,16 @@ jQuery(document).ready(function($) {
 
   });
 
+  /*Mobile-menu
+  ======================================================*/
+  $(function() {
+    $('.mobile-buttton').on('click', function(event) {
+      event.preventDefault();
+      $(this).toggleClass('mobile-buttton--active');
+      $('.main-nav').slideToggle();
+    });
+  });
+
 
 });
 

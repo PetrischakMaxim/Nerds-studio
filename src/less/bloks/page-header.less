@@ -2,11 +2,10 @@
 	background: @base-bg;
 	padding: @p-off 0 0 0;
   text-transform: uppercase;
-
 }
 
 .page-header--inner {
-  padding-bottom: 70px;
+  padding-bottom: @base-offset;
 }
 
 .page-header__logo {
@@ -39,6 +38,49 @@
 
 }
 
+@media (max-width: @md-width) {
+  .page-header {
+    padding-top: @p-off - 10;
+  }
+
+  .page-header--inner {
+    padding-bottom: @base-offset - 10;
+  }
+  .page-header__logo {
+    float: none;
+    width: auto;
+  }
+  .page-header__nav,
+  .page-header__user {
+    float: none;
+    padding: 0;
+    width: auto;
+    text-align-last: right;
+
+  }
+}
+
+@media (max-width: @sm-width) {
+  .page-header {
+    padding-top: @p-off - 20;
+  }
+
+  .page-header--inner {
+    padding-bottom: @base-offset - 20;
+  }
+}
+
+
+@media (max-width: @xs-width) {
+  .page-header {
+    padding-top: @p-off - 25;
+  }
+
+  .page-header--inner {
+    padding-bottom: @base-offset - 25;
+  }
+
+}
 
 
 
