@@ -52,8 +52,42 @@ a {
 
 
 .container {
-  max-width: 1200px;
+  width: 1200px;
   padding: 0 20px;
   margin: 0 auto;
   .clearfix();
 }
+
+@media(max-width: @lg-width) and (min-width:@md-width ) {
+
+}
+
+@media(max-width: @md-width) and (min-width:@sm-width ) {
+
+  .container {
+    width: 750px;
+  }
+
+}
+
+@media(max-width: @sm-width) and (min-width:@xs-width ) {
+
+  .container {
+    width: 530px;
+    padding: 0 10px;
+
+  }
+
+}
+
+@media(max-width: @xs-width) and (min-width:@xxs-width ) {
+
+  .container {
+    width: 300px;
+    padding: 0 10px;
+  }
+
+}
+
+
+

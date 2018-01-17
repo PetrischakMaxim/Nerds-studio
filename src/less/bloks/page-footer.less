@@ -20,3 +20,33 @@
   margin: 0;
 }
 
+@media (max-width: @md-width) and (min-width:@sm-width ) {
+  .page-footer__social {
+    width: 50%;
+  }
+
+  .page-footer__promo {
+    width: 50%;
+  }
+
+
+}
+
+@media (max-width: @sm-width) and (min-width:@xxs-width ) {
+  .page-footer__social,
+  .page-footer__promo {
+    width: 100%;
+    float: none;
+
+  }
+
+  .page-footer__social {
+    margin-bottom: 10px;
+    text-align: center;
+
+  }
+
+
+}
+
+
