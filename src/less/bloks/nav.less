@@ -41,3 +41,42 @@
 .nav__icon {
   padding-right: @p-off / 2;
 }
+
+@media (max-width: @lg-width) and (min-width:@md-width ) {
+
+}
+
+@media (max-width: @md-width) {
+  .main-nav {
+    display: none;
+  }
+
+  .nav {
+    display: block;
+  }
+
+  .nav__item {
+    display: block;
+    margin-right: 0;
+    padding: 5px;
+  }
+
+  .nav__link  {
+    display: block;
+  }
+
+  .nav__link--active {
+    &:after {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: @sm-width) and (min-width:@xs-width ) {
+
+}
+
+
+@media (max-width: @xs-width) and (min-width:@xxs-width ) {
+
+}

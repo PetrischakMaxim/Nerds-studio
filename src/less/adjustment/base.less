@@ -52,14 +52,17 @@ a {
 
 
 .container {
+  position: relative;
   width: 1200px;
   padding: 0 20px;
   margin: 0 auto;
   .clearfix();
 }
 
-@media(max-width: @lg-width) and (min-width:@md-width ) {
-
+@media(max-width: @lg-width) {
+  .container {
+    width: 970px;
+  }
 }
 
 @media(max-width: @md-width) and (min-width:@sm-width ) {
@@ -80,7 +83,7 @@ a {
 
 }
 
-@media(max-width: @xs-width) and (min-width:@xxs-width ) {
+@media(max-width: @xs-width) {
 
   .container {
     width: 300px;
