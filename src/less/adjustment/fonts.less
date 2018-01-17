@@ -25,6 +25,15 @@
   }
 }
 
+.flaticon-tick:before { content: "\f100"; }
+.flaticon-arrows:before { content: "\f101"; }
+.flaticon-cancel-music:before { content: "\f102"; }
+.flaticon-instagram-logo:before { content: "\f103"; }
+.flaticon-facebook-logo:before { content: "\f104"; }
+.flaticon-vk-social-vk:before { content: "\f105"; }
+.flaticon-shopping-cart-black-shape:before { content: "\f106"; }
+.flaticon-down-arrow:before { content: "\f107"; }
+
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
   font-family: Flaticon;
@@ -35,11 +44,19 @@
 
 }
 
-.flaticon-tick:before { content: "\f100"; }
-.flaticon-arrows:before { content: "\f101"; }
-.flaticon-cancel-music:before { content: "\f102"; }
-.flaticon-instagram-logo:before { content: "\f103"; }
-.flaticon-facebook-logo:before { content: "\f104"; }
-.flaticon-vk-social-vk:before { content: "\f105"; }
-.flaticon-shopping-cart-black-shape:before { content: "\f106"; }
-.flaticon-down-arrow:before { content: "\f107"; }
+@media (max-width: @lg-width) and (min-width:@md-width ) {
+
+}
+
+@media (max-width: @md-width) and (min-width:@sm-width ) {
+
+}
+
+@media (max-width: @sm-width) and (min-width:@xxs-width ) {
+  [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+  [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+    font-size: 16px;
+  }
+}
+
+
